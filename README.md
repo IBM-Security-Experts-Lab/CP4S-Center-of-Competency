@@ -15,6 +15,8 @@ Text mode installation offers an interactive, non-graphical interface for instal
 - We have downloaded this iso file: /tmp/RHEL-7.7-20190723.1-Server-x86_64-dvd1.iso
 
 ### Steps
+ 1. [Install Virtual Machines](#Install-Virtual-Machines-(VM))
+ 2. [Configure Virtual Machines](#Configure-Virtual-Machine-using-Text-Mode-Interface)
 
 #### Install Virtual Machines (VM)
 
@@ -53,9 +55,18 @@ We need 4 VMs: 1 master and 3 worker nodes.  Here are the steps for those.
 - The values entered in this section follow the [Quick Installation Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/chap-simple-install), but because this is a text mode installation the amount of choices you can make are limited.  
 
 ![image2](/text-mode-images/AnacondaCFG1.png)
-
 **Figure 1.1. Text Mode Installation**
 
 Installation in text mode follows a pattern similar to the graphical installation: There is no single fixed progression; you can configure many settings in any order you want using the main status screen. Screens which have already been configured, either automatically or by you, are marked as `[x]`, and screens which require your attention before the installation can begin are marked with `[!]`. Available commands are displayed below the list of available options.  **Note** When related background tasks are being run, certain menu items can be temporarily unavailable or display the `Processing...` label. To refresh to the current status of text menu items, use the **r** option at the text mode prompt.
 
-1.  
+1. Language settings
+   - Unable to change this from English
+2. Time settings
+   - Set time to host machines time-zone
+3. Installation source
+4. Software selection
+5. Installation Destination
+6. Kdump
+7. Network Configuration
+8. Root password
+9. User creation
